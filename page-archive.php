@@ -19,17 +19,15 @@
       <div class="row">
         <ul class="d-flex col-12">
 
-          <li class="px-5 py-2 ml-5"><a href="<?php bloginfo('url'); ?>/archive">All</a></li>
+          <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/archive">All</a></li>
 
-          <li class="px-5 py-2 ml-5"><a href="<?php bloginfo('url'); ?>/tops">Tops</a></li>
+          <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/tops">Tops</a></li>
 
+          <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/bottom">Bottom</a></li>
 
-          <li class="px-5 py-2 ml-5"><a href="<?php bloginfo('url'); ?>/bottom">Bottom</a>
-            <Bottom</li>
+          <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/headwear">Headwear</a></li>
 
-          <li class="px-5 py-2 ml-5"><a href="<?php bloginfo('url'); ?>/headwear">Headwear</a></li>
-
-          <li class="px-5 py-2 ml-5"><a href="<?php bloginfo('url'); ?>/other">other</a></li>
+          <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/other">other</a></li>
 
         </ul>
       </div>

@@ -30,10 +30,10 @@
             <p class="mt-4">カラーを選択して下さい</p>
             <p id="text mt-4">ブラック</p>
             <div class="d-flex mt-4">
-              <img src="<?php bloginfo('template_url'); ?>/images/fb8aabc0e9e9a2d6e643276d058ab9ef.jpg
+              <img src="<?php echo get_template_directory_uri(); ?>/images/fb8aabc0e9e9a2d6e643276d058ab9ef.jpg
 " alt="ブラック" id="category-img-1" height="100" width="100">
-              <img src="<?php bloginfo('template_url'); ?>/images/bb56ef02a276d60336148cb839723901.jpg" alt="ホワイト" class="ml-3" height="100" width="100">
-              <img src="<?php bloginfo('template_url'); ?>/images/0149bf2eb3be2cb22765be8b15438421.jpg" alt="ミントブルー" class="ml-3" height="100" width="100">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/bb56ef02a276d60336148cb839723901.jpg" alt="ホワイト" class="ml-3" height="100" width="100">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/0149bf2eb3be2cb22765be8b15438421.jpg" alt="ミントブルー" class="ml-3" height="100" width="100">
 
             </div>
 
@@ -53,21 +53,21 @@
 
             <div class="item-cart">
               <a href="" class="faq-button ">
-                <img src="<?php bloginfo('template_url'); ?>/images/shopping-cart_icon.png" alt="カートアイコン" 　class="px-2">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/shopping-cart_icon.png" alt="カートアイコン" 　class="px-2">
                 カートに入れる
               </a>
             </div>
 
             <div class="mt-4">
               <a href="" class="">
-                <img src="<?php bloginfo('template_url'); ?>/images/review-check.png" alt="レビューアイコン">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/review-check.png" alt="レビューアイコン">
                 カートに入れる
               </a>
             </div>
 
             <div class="mt-4">
               <a href="" class="">
-                <img src="<?php bloginfo('template_url'); ?>/images/review-write.png" alt="レビューペンアイコン">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/review-write.png" alt="レビューペンアイコン">
                 商品レビューを見る<span class="">2件</span>
               </a>
             </div>
@@ -100,7 +100,7 @@
           </div> -->
 
             <div class="euu section">
-              <img src="<?php bloginfo('template_url'); ?>/images/single-size-1_img.png" alt="サイズ表３" height="420" width="475" style="margin-top: 50px;">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/single-size-1_img.png" alt="サイズ表３" height="420" width="475" style="margin-top: 50px;">
             </div>
           </div>
 

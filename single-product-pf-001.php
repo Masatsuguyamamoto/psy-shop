@@ -42,10 +42,14 @@ Template Post Type: post, page, products
             <p class="mt-4">カラーを選択して下さい</p>
             <p id="text mt-4">ブラック</p>
             <div class="d-flex mt-4">
-              <img src="<?php bloginfo('template_url'); ?>/images/33ca343b1cccb402c94b972cec7a95b5-1.png" alt="ホワイト" id="category-img-1" height="100" width="100">
-              <img src="<?php bloginfo('template_url'); ?>/images/images/0d4db65b9967972b2c1003a3790549e4.png" alt="ーブラック" class="ml-3" height="100" width="100">
-              <img src="<?php bloginfo('template_url'); ?>/images/c772707d1f039f444263b458518d8434.png" alt="デニムブルー" class="ml-3" height="100" width="100">
-              <img src="<?php bloginfo('template_url'); ?>/images/55d5baf03bccccc6b5f6d1e34289d6d3-1.png" alt="ワンウォッシュブルー" class="ml-3" height="100" width="100">
+
+              <img src="<?php echo get_template_directory_uri(); ?>/images/33ca343b1cccb402c94b972cec7a95b5.png" alt="ホワイト" class="ml-3" height="120" width="120">
+
+              <img src="<?php echo get_template_directory_uri(); ?>/images/0d4db65b9967972b2c1003a3790549e4.png" alt="ーブラック" class="ml-3" height="120" width="120">
+
+              <img src="<?php echo get_template_directory_uri(); ?>/images/06d14642e1d6aa4f09dbc2728ec70602.png" alt="デニムブルー" class="ml-3" height="120" width="120">
+
+              <img src="<?php echo get_template_directory_uri(); ?>/images/55d5baf03bccccc6b5f6d1e34289d6d3.png" alt="ワンウォッシュブルー" class="ml-3" height="120" width="120">
 
             </div>
 
@@ -65,21 +69,21 @@ Template Post Type: post, page, products
 
             <div class="item-cart">
               <a href="" class="faq-button ">
-                <img src="<?php bloginfo('template_url'); ?>/images/shopping-cart_icon.png" alt="カートアイコン" 　class="px-2">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/shopping-cart_icon.png" alt="カートアイコン" 　class="px-2">
                 カートに入れる
               </a>
             </div>
 
             <div class="mt-4">
               <a href="" class="">
-                <img src="<?php bloginfo('template_url'); ?>/images/review-check.png" alt="レビューアイコン">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/review-check.png" alt="レビューアイコン">
                 カートに入れる
               </a>
             </div>
 
             <div class="mt-4">
               <a href="" class="">
-                <img src="<?php bloginfo('template_url'); ?>/images/review-write.png" alt="レビューペンアイコン">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/review-write.png" alt="レビューペンアイコン">
                 商品レビューを見る<span class="">2件</span>
               </a>
             </div>
@@ -151,33 +155,30 @@ Template Post Type: post, page, products
 
           <div class="group-item-img d-flex">
 
+            <?php
+            $args = array(
+              'post_type' => 'product',
+              'post_status' => 'publish',
+              'orderby' => 'rand',
+              'post__not_in' => array($post->ID),
+              'posts_per_page' => 4
+            );
 
+            $my_query = new WP_Query($args);
+            ?>
 
-            <!-- <div class="col-3 group-item-img-img">
-              <img src="<?php bloginfo('template_url'); ?>/images/250x350.png" alt="関連商品写真"  >
-              <p class="group-item-p">商品名</p>
-              <p class="group-item-p2">値段<span class="">（税込）</span></p>
-            </div>
+            <?php while ($my_query->have_posts()) :
 
-            <div class="col-3 group-item-img-img">
-              <img src="<?php bloginfo('template_url'); ?>/images/250x350.png" alt="関連商品写真">
-              <p class="group-item-p">商品名</p>
-              <p class="group-item-p2">値段<span class="">（税込）</span></p>
-            </div>
+              $my_query->the_post(); ?>
 
-            <div class="col-3 group-item-img-img">
-              <img src="<?php bloginfo('template_url'); ?>/images/250x350.png" alt="関連商品写真">
-              <p class="group-item-p">商品名</p>
-              <p class="group-item-p2">値段<span class="">（税込）</span></p>
-            </div>
+              <div class="mr-5">
+                <a href="<?php the_permalink(); ?>" class="a-thumbnail"><?php the_post_thumbnail(array(340, 255)); ?></a>
 
-            <div class="col-3 group-item-img-img">
-              <img src="<?php bloginfo('template_url'); ?>/images/250x350.png" alt="関連商品写真">
-              <p class="group-item-p">商品名</p>
-              <p class="group-item-p2">値段<span class="">（税込）</span></p>
-            </div> -->
+              </div>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+          </div><!-- group-item-img end -->
 
-          </div>
         </div>
       </div>
     </div>

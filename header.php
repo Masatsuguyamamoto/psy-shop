@@ -20,36 +20,47 @@
         <div class="row no-gutters">
           <div class="d-flex">
 
-            <a href="<?php bloginfo('url'); ?>">
+            <a href="<?php echo home_url(); ?>">
               <div class="header-img col-3 ml-5 mr-5">
-                <img src="<?php bloginfo('template_url'); ?>/images/header-logo_img.png" alt="mainlogo" height="71px" width="331px" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/header-logo_img.png" alt="mainlogo" height="71px" width="331px" />
             </a>
           </div>
 
           <div class="header-list col-9 d-flex">
             <div class="pr-5">
               <ul class="nav-menu-ul d-flex pt-4 px-5 ml-5 ">
-                <li class="ml-4"><a href="<?php bloginfo('url'); ?>/about">ABOUT</a></li>
-                <li class="ml-4"><a href="<?php bloginfo('url'); ?>/archive">PRODUCT</a></li>
-                <li class="ml-4"><a href="<?php bloginfo('url'); ?>/contact">CONTACT</a></li>
-                <li class="ml-4"><a href="<?php bloginfo('url'); ?>/faq">FAQ</a></li>
+
+                <li class="ml-4"><a href="<?php echo home_url(); ?>/about">ABOUT</a></li>
+                <li class="ml-4"><a href="<?php echo home_url(); ?>/archive">PRODUCT</a></li>
+                <li class="ml-4"><a href="<?php echo home_url(); ?>/contact">CONTACT</a></li>
+                <li class="ml-4"><a href="<?php echo home_url(); ?>/faq">FAQ</a></li>
               </ul>
             </div>
 
             <div class="header-icon d-flex ml-5 col-3 pt-4 pl-5">
 
-              <!-- <img src="<?php bloginfo('template_url'); ?>/images/search_icon.png" alt="search-icon" height="30" width="30"> -->
+              <img src="<?php echo get_template_directory_uri(); ?>/images/search_icon.png" alt="search-icon" height="30" width="30">
 
               <!-- <div id="wrap">
                 <form action="" autocomplete="on">
                   <input id="search" name="search" type="text" placeholder="キーワード検索"><input id="search_submit" value="Rechercher" type="submit">
                 </form>
               </div> -->
+              <div class="">
+                <ul class="d-menu">
+                  <li>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/account_icon.png" alt="coat" height="30" width="30" />
 
+                    <ul class="">
+                      <li><a href="">ログイン</a></li>
+                      <li><a href="">新規会員登録</a></li>
+                    </ul>
 
+                  </li>
+                </ul>
+              </div>
 
-              <a href="" class="ml-4"><img src="<?php bloginfo('template_url'); ?>/images/account_icon.png" alt="login-icon" height="30" width="30" /></a>
-              <a href="" class="ml-4"><img src="<?php bloginfo('template_url'); ?>/images/shopping-cart_icon.png" alt="coat" height="30" width="30" /></a>
+              <a href="" class="ml-4"><img src="<?php echo get_template_directory_uri(); ?>/images/shopping-cart_icon.png" alt="coat" height="30" width="30" /></a>
 
             </div><!-- header-icon -->
 
@@ -64,7 +75,7 @@
           <div class="">
             <div class="row no-gutters">
               <div class="col px-0">
-                <img src="<?php bloginfo('template_url'); ?>/images/MV-1.jpg" alt="main-mv" height="800px" width="1440px">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/MV-1.jpg" alt="main-mv" height="800px" width="1440px">
               </div>
             </div><!-- row no-gutters -->
           </div>

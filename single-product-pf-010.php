@@ -30,8 +30,8 @@
             <p class="mt-4">カラーを選択して下さい</p>
             <p id="text mt-4">ブラック</p>
             <div class="d-flex mt-4">
-              <img src="<?php bloginfo('template_url'); ?>/images/2431df87873910c6d4710151e2696b9f.jpg" alt="ブラック" id="category-img-1" height="100" width="100">
-              <img src="<?php bloginfo('template_url'); ?>/images/7bc87f22a9106a6d39e44eb6a5e83fa5.jpg" alt="ホワイト" class="ml-3" height="100" width="100">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/2431df87873910c6d4710151e2696b9f.jpg" alt="ブラック" id="category-img-1" height="100" width="100">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/7bc87f22a9106a6d39e44eb6a5e83fa5.jpg" alt="ホワイト" class="ml-3" height="100" width="100">
 
             </div>
 
@@ -49,21 +49,21 @@
 
             <div class="item-cart">
               <a href="" class="faq-button ">
-                <img src="<?php bloginfo('template_url'); ?>/images/shopping-cart_icon.png" alt="カートアイコン" 　class="px-2">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/shopping-cart_icon.png" alt="カートアイコン" 　class="px-2">
                 カートに入れる
               </a>
             </div>
 
             <div class="mt-4">
               <a href="" class="">
-                <img src="<?php bloginfo('template_url'); ?>/images/review-check.png" alt="レビューアイコン">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/review-check.png" alt="レビューアイコン">
                 カートに入れる
               </a>
             </div>
 
             <div class="mt-4">
               <a href="" class="">
-                <img src="<?php bloginfo('template_url'); ?>/images/review-write.png" alt="レビューペンアイコン">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/review-write.png" alt="レビューペンアイコン">
                 商品レビューを見る<span class="">2件</span>
               </a>
             </div>
@@ -95,7 +95,7 @@
           </div> -->
 
             <div class="euu section">
-              <img src="<?php bloginfo('template_url'); ?>/images/single-size-2_img.png" alt="サイズ表３" height="420" width="475" style="margin-top: 50px;">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/single-size-2_img.png" alt="サイズ表３" height="420" width="475" style="margin-top: 50px;">
             </div>
           </div>
 

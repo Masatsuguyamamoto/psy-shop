@@ -101,7 +101,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 d-flex justify-content-center">
-        <a href="" class="faq-button">
+        <a href="<?php echo home_url(); ?>/contact" class="faq-button">
           <img src="<?php bloginfo('template_url'); ?>/images/mail-white_icon.png" alt="メール">
           お問い合わせはこちらから
         </a>

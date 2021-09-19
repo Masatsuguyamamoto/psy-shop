@@ -25,3 +25,8 @@ add_action( 'init', 'create_post_type' );
         )
     );
 }
+
+/* contact form 7 */
+
+
+
