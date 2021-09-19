@@ -22,7 +22,7 @@
         <div class="col-2">
           <ul class="footer-ul">
             <li class="ml-4"><a href="<?php echo home_url(); ?>/about">ABOUT</a></li>
-            <li class="ml-4 mt-3"><a href="<?php echo home_url(); ?>/archive">PRODUCT</a></li>
+            <li class="ml-4 mt-3"><a href="<?php echo home_url(); ?>/items">PRODUCT</a></li>
             <li class="ml-4 mt-3"><a href="<?php echo home_url(); ?>/contact">CONTACT</a></li>
             <li class="ml-4 mt-3"><a href="<?php echo home_url(); ?>/faq">FAQ</a></li>
           </ul>

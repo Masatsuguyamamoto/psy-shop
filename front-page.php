@@ -72,16 +72,16 @@
         <div class="category-cont1">
           <h2 class="section-h2">Category<span class="section-span">カテゴリーから探す</span></h2>
           <div class="category-img d-flex mt-4">
-            
-
-            <a href="<?php echo home_url(); ?>/archive/tops" class="col-3"><img src="<?php echo get_template_directory_uri(); ?>/images/top-category-tops_icon.png" alt="tops" class="" height="351" width="263"></a>
 
 
-            <a href="<?php echo home_url(); ?>" class="col-3"><img src="<?php echo get_template_directory_uri(); ?>/images/top-category-bottom_icon.png" alt="bottom" height="351" width="263"></a>
+            <a href="<?php echo home_url(); ?>/tops" class="col-3"><img src="<?php echo get_template_directory_uri(); ?>/images/top-category-tops_icon.png" alt="tops" class="" height="351" width="263"></a>
 
-            <a href="<?php echo home_url(); ?>" class="col-3"><img src="<?php echo get_template_directory_uri(); ?>/images/top-category-headwear_icon.png" alt="headwear" height="351" width="263"></a>
 
-            <a href="<?php echo home_url(); ?>" class="col-3"><img src="<?php echo get_template_directory_uri(); ?>/images/top-category-other_icon.png" alt="other" height="351" width="263"></a>
+            <a href="<?php echo home_url(); ?>/bottom" class="col-3"><img src="<?php echo get_template_directory_uri(); ?>/images/top-category-bottom_icon.png" alt="bottom" height="351" width="263"></a>
+
+            <a href="<?php echo home_url(); ?>/headwear" class="col-3"><img src="<?php echo get_template_directory_uri(); ?>/images/top-category-headwear_icon.png" alt="headwear" height="351" width="263"></a>
+
+            <a href="<?php echo home_url(); ?>/other" class="col-3"><img src="<?php echo get_template_directory_uri(); ?>/images/top-category-other_icon.png" alt="other" height="351" width="263"></a>
           </div>
         </div><!-- row end -->
       </div><!-- container end -->

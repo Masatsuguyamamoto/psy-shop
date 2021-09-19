@@ -103,9 +103,9 @@ Template Post Type: post, page, products
               <button id="fuu" class="secList">アイテム説明</button>
             </div>
 
-            <div class="article-p-1 ml-5">
+            <!-- <div class="article-p-1 ml-5">
               <button id="euu" class="secList">アイテムサイズ</button>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -125,7 +125,7 @@ Template Post Type: post, page, products
       </div>
 
       <div class="mt-3">
-        <p class="">写真の光加減や、、ご覧いただく環境により、ご覧いただく環境により色味が異なる場合がございます。</p>
+        <p class="">写真の光加減やご覧いただく環境により色味が異なる場合がございます。</p>
       </div>
       <div class="container">
         <div class="row">
@@ -150,7 +150,7 @@ Template Post Type: post, page, products
         <div class="">
 
           <div class="">
-            <h2 class="group-item-h2">関連アイテム</h2>
+            <h2 class="group-item-h2">オススメアイテム</h2>
           </div>
 
           <div class="group-item-img d-flex">

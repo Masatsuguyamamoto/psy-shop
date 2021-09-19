@@ -31,7 +31,7 @@
               <ul class="nav-menu-ul d-flex pt-4 px-5 ml-5 ">
 
                 <li class="ml-4"><a href="<?php echo home_url(); ?>/about">ABOUT</a></li>
-                <li class="ml-4"><a href="<?php echo home_url(); ?>/archive">PRODUCT</a></li>
+                <li class="ml-4"><a href="<?php echo home_url(); ?>/items">PRODUCT</a></li>
                 <li class="ml-4"><a href="<?php echo home_url(); ?>/contact">CONTACT</a></li>
                 <li class="ml-4"><a href="<?php echo home_url(); ?>/faq">FAQ</a></li>
               </ul>
@@ -39,13 +39,14 @@
 
             <div class="header-icon d-flex ml-5 col-3 pt-4 pl-5">
 
-              <img src="<?php echo get_template_directory_uri(); ?>/images/search_icon.png" alt="search-icon" height="30" width="30">
+              <!-- <img src="<?php //echo get_template_directory_uri(); ?>/images/search_icon.png" alt="search-icon" height="30" width="30"> -->
 
-              <!-- <div id="wrap">
+              <div id="wrap">
                 <form action="" autocomplete="on">
                   <input id="search" name="search" type="text" placeholder="キーワード検索"><input id="search_submit" value="Rechercher" type="submit">
                 </form>
-              </div> -->
+              </div>
+
               <div class="">
                 <ul class="d-menu">
                   <li>
