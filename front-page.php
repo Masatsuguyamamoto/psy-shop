@@ -104,15 +104,12 @@
 
             $my_query = new WP_Query($args);
             ?>
-
             <?php while ($my_query->have_posts()) :
               $my_query->the_post(); ?>
 
               <div class="col-3">
                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
               </div>
-
-
             <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
           </div>

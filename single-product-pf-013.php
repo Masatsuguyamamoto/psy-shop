@@ -3,8 +3,7 @@
 
 <main>
 
-  <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/" style="margin-left: 160px;">
-
+  <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
     <?php if (function_exists('bcn_display')) {
       bcn_display();
     } ?>
@@ -98,9 +97,6 @@
             </div>
           </div>
 
-          <script>
-
-          </script>
         </div>
         <div class="container">
           <div class="row">
@@ -117,7 +113,7 @@
           <div class="container ">
             <div class="row">
               <div class="">
-                <p class="">商品番号<span class="">: <PF-013></PF-013></span></p>
+                <p class="">商品番号<span class="">: PF-013</p>
                 <p class="">素材<span class="">: 綿100%</span></p>
                 <p class="">配送予定日<span class="">: ご注文より約３週間</span></p>
               </div>
@@ -138,37 +134,33 @@
         <div class="">
 
           <div class="">
-            <h2 class="group-item-h2">関連アイテム</h2>
+            <h2 class="group-item-h2">新作アイテム</h2>
           </div>
 
           <div class="group-item-img d-flex">
+            <div class="newarrival-img d-flex mt-4">
+
+              <?php
+              $args = array(
+                'post_type' => 'product',
+                'post_status' => 'publish',
+                'posts_per_page' => 4
+              );
+
+              $my_query = new WP_Query($args);
+              ?>
+
+              <?php while ($my_query->have_posts()) :
+                $my_query->the_post(); ?>
+
+                <div class="col-3">
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
+                </div>
 
 
-
-            <!-- <div class="col-3 group-item-img-img">
-              <img src="<?php bloginfo('template_url'); ?>/images/250x350.png" alt="関連商品写真"  >
-              <p class="group-item-p">商品名</p>
-              <p class="group-item-p2">値段<span class="">（税込）</span></p>
+              <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
             </div>
-
-            <div class="col-3 group-item-img-img">
-              <img src="<?php bloginfo('template_url'); ?>/images/250x350.png" alt="関連商品写真">
-              <p class="group-item-p">商品名</p>
-              <p class="group-item-p2">値段<span class="">（税込）</span></p>
-            </div>
-
-            <div class="col-3 group-item-img-img">
-              <img src="<?php bloginfo('template_url'); ?>/images/250x350.png" alt="関連商品写真">
-              <p class="group-item-p">商品名</p>
-              <p class="group-item-p2">値段<span class="">（税込）</span></p>
-            </div>
-
-            <div class="col-3 group-item-img-img">
-              <img src="<?php bloginfo('template_url'); ?>/images/250x350.png" alt="関連商品写真">
-              <p class="group-item-p">商品名</p>
-              <p class="group-item-p2">値段<span class="">（税込）</span></p>
-            </div> -->
-
           </div>
         </div>
       </div>

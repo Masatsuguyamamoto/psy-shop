@@ -3,8 +3,7 @@
 
 <main>
 
-  <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/" style="margin-left: 160px;">
-
+  <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
     <?php if (function_exists('bcn_display')) {
       bcn_display();
     } ?>
@@ -102,14 +101,14 @@
 
 
           <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="mt-3">
-                <p class="">写真の光加減やご覧いただく環境により色味が異なる場合がございます。</p>
+            <div class="row">
+              <div class="col-12">
+                <div class="mt-3">
+                  <p class="">写真の光加減やご覧いただく環境により色味が異なる場合がございます。</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
           <div class="mt-5">
             <div class="container">

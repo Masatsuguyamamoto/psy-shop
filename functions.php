@@ -26,7 +26,8 @@ add_action( 'init', 'create_post_type' );
     );
 }
 
-/* contact form 7 */
+add_theme_support('post-thumbnails');
+
 
 
 

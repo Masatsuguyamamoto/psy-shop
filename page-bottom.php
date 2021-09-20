@@ -24,15 +24,15 @@
       <div class="row">
         <ul class="d-flex col-12">
 
-            <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/items">All</a></li>
+          <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/items">All</a></li>
 
-            <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/tops">Tops</a></li>
+          <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/tops">Tops</a></li>
 
-            <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/bottom">Bottom</a></li>
+          <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/bottom">Bottom</a></li>
 
-            <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/headwear">Headwear</a></li>
+          <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/headwear">Headwear</a></li>
 
-            <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/other">other</a></li>
+          <li class="px-5 py-2 ml-5"><a href="<?php echo home_url(); ?>/other">other</a></li>
 
         </ul>
       </div>
@@ -45,7 +45,7 @@
 
         <div class="category-img-g d-flex justify-content-center">
 
-        <?php
+          <?php
           $args = array(
             'post_type' => 'product',
             'taxonomy' => 'product_cat',
@@ -54,20 +54,17 @@
             'post_status' => 'publish',
             'posts_per_page' => 16,
           );
-
-          $my_query = new WP_Query($args); ?>
-
-          <?php while ($my_query->have_posts()):
-          $my_query->the_post(); ?>
-          <div class="category-img-g-w">
-            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-            <a href="<?php the_permalink(); ?>">
-          <h5><?php the_title(); ?></h5>
-        </a>
-        <p><?php echo get_post_meta(get_the_ID(),'price',true); ?><span>（税込）</span></p>
-          </div>
-          <?php endwhile; ?>
-          <?php wp_reset_postdata(); ?>
+          ?>
+          
+          <?php $my_query = get_posts($args);
+          if ($my_query) : ?>
+            <?php foreach ($my_query as $post) : setup_postdata($post); ?>
+              <p><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?><?php the_title(); ?></a></p>
+            <?php endforeach; ?>
+          <?php else : ?>
+            <p>関連アイテムはまだありません。</p>
+          <?php endif;
+          wp_reset_postdata(); ?>
         </div><!-- category-img-g end-->
 
       </div>
