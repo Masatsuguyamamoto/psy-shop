@@ -13,7 +13,7 @@
       <div class="row">
         <div class="col-12 d-flex justify-content-center">
 
-          <img src="<?php bloginfo('template_url'); ?>/images/404_img.png" alt="404" class="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/404_img.png" alt="404" class="">
         </div>
       </div>
     </div>
@@ -60,17 +60,22 @@
 
   <div class=" d-flex justify-content-center">
     <a href="<?php bloginfo('url'); ?> " class="error-button1 d-flex">
-      <img src="<?php bloginfo('template_url'); ?>/images/home_icon.png" alt="ホーム">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/home_icon.png" alt="ホーム">
       トップページへ戻る
     </a>
   </div>
 
   <div class="d-flex justify-content-center">
-    <a href="" class="error-button2 d-flex">
-      <img src="<?php bloginfo('template_url'); ?>/images/chevron-left-white_icon.png" alt="＜">
+
+
+    <a href="<?php echo $_SERVER['HTTP_REFERER']; ?>" class="error-button2 d-flex">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/chevron-left-white_icon.png" alt="＜">
       前のページへ戻る
     </a>
   </div>
+
+
+
 
 </main>
 <?php get_footer(); ?>

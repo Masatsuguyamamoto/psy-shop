@@ -30,7 +30,7 @@
 
         <div class="col-2">
           <ul class="footer-ul">
-            <li class="ml-4 mt-3"><a href="">利用規約</a></li>
+            <li class="ml-4"><a href="">利用規約</a></li>
             <li class="ml-4 mt-3"><a href="">プライバシーポリシー</a></li>
             <li class="ml-4 mt-3"><a href="">特定商取引について</a></li>
           </ul>

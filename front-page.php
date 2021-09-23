@@ -51,7 +51,7 @@
 
           <div class="d-flex justify-content-center ">
             <a href="https://www.instagram.com/dodo1980614/">
-              <button type="button" class="section-button ">read more</button>
+              <p class="section-button ">read more</p>
             </a>
           </div>
         </div>
@@ -121,7 +121,7 @@
 
                   <div class="d-flex justify-content-center ">
                     <a href="<?php echo home_url(); ?>/archive">
-                      <button type="button" class="section-button ">read more</button>
+                      <p class="section-button ">read more</p>
                     </a>
                   </div>
                 </div>

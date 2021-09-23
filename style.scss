@@ -102,7 +102,8 @@ right:160px;
 }
 
 .d-menu > li:hover ul {
-  height: 90px;
+  justify-content: center;
+  height: 65px;
   width: 150px;
   background-color: #fff;
   display: block;
@@ -113,6 +114,7 @@ right:160px;
   left: 0;
   list-style-type: none;
   border: 1px solid #fff;
+  z-index: 9;
 }
 .d-menu > li:hover ul a {
   font-size: 18px;
@@ -201,12 +203,20 @@ right:160px;
 
 .newarrival {
   margin-top: 120px;
+  .section-h2 {
+    margin-top: 120px;
+    font-size: 36px;
+  }
+  .section-span {
+    margin-left: 13px;
+    font-size: 18px;
+  }
 }
 
 .section-button {
   margin-top: 80px;
   padding: 13px 64px 12px;
-  border-radius: 24px;
+  border-radius: 30px;
   background-color: #153891;
   color: #fff;
   font-size: 20px;
