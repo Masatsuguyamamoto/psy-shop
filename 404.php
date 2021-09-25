@@ -26,7 +26,7 @@
         <div class="col-2">
 
         </div>
-        <div class="col-8 ">
+        <div class="col-8 p-0">
           <div class=" ">
             <h2 class="error-h2">
               ページが見つかりません。
@@ -60,7 +60,7 @@
 
   <div class=" d-flex justify-content-center">
     <a href="<?php bloginfo('url'); ?> " class="error-button1 d-flex">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/home_icon.png" alt="ホーム">
+      <img src="<?php echo get_template_directory_uri(); ?>images/home_icon (1).png" alt="ホーム">
       トップページへ戻る
     </a>
   </div>
@@ -69,7 +69,7 @@
 
 
     <a href="<?php echo $_SERVER['HTTP_REFERER']; ?>" class="error-button2 d-flex">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/chevron-left-white_icon.png" alt="＜">
+      <img src="<?php echo get_template_directory_uri(); ?>images/chevron-left-white_icon (2).png" alt="＜">
       前のページへ戻る
     </a>
   </div>

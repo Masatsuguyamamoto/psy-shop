@@ -43,7 +43,7 @@
 
               <div id="wrap">
                 <form action="" autocomplete="on">
-                  <input id="search" name="search" type="text" placeholder="キーワード検索"><input id="search_submit" value="Rechercher" type="submit">
+                  <input id="search" name="search" type="text" placeholder="キーワードで探す"><input id="search_submit" value="Rechercher" type="submit">
                 </form>
               </div>
 

@@ -11,14 +11,14 @@
 
           <div class="about-h">
 
-            <div class="breadcrumbs-about">
+            <!-- <div class="breadcrumbs-about">
 
               <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
                 <?php if (function_exists('bcn_display')) {
                   bcn_display();
                 } ?>
               </div>
-            </div>
+            </div> -->
 
             <p class="p-0">サイコフレーム</p>
             <h3 class="">PSYCHOFRAME<span>とは</span></h3>

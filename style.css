@@ -76,7 +76,7 @@ header .header-list ul li a {
   height: 30px;
   width: 30px;
   display: inline-block;
-  background: url(/wordpress7/wp-content/themes/PSY/images/search_icon.png) center center no-repeat;
+  background: url(images/search_icon.png) center center no-repeat;
   background-color: #595a5c;
   text-indent: -10000px;
   border: none;
@@ -102,12 +102,13 @@ header .header-list ul li a {
 
 .d-menu > li:hover ul {
   justify-content: center;
-  height: 65px;
+  height: 75px;
   width: 150px;
   background-color: #fff;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.25);
   display: block;
   position: absolute;
-  padding: 0;
+  padding: 8px 0 0 15px;
   margin: 0;
   top: 1.5em;
   left: 0;
